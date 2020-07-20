@@ -4,11 +4,11 @@
   
   
 <p align="center">
-<img src="https://github.com/onurbarman/MovieDB/tree/master/images/android_arc.png"/>
+<img src="https://github.com/onurbarman/MovieDB/blob/master/images/android_arc.png"/>
 </p>
 
 # MovieDB App
-![appicon](https://github.com/onurbarman/MovieDB/tree/master/images/logo.png)
+![appicon](https://github.com/onurbarman/MovieDB/blob/master/images/logo.png)
 
 MovieDB is a simple Android Fetch Popular Movies and TV Shows App
 
@@ -16,7 +16,7 @@ The main goal of this app is to be a sample of how to build an high quality Andr
 
 <h2 id="Outputs">Outputs</h2>
 <p>
-  <img src="https://github.com/onurbarman/MovieDB/tree/master/images/MovieDB_Screens.png"  />
+  <img src="https://github.com/onurbarman/MovieDB/blob/master/images/MovieDB_Screens.png"  />
  
 </p>
 
@@ -29,7 +29,7 @@ Model-View-ViewModel (ie MVVM) is a template of a client application architectur
 
 
 ## Clean Simple Architecture
-![Architecture](https://github.com/onurbarman/MovieDB/tree/master/images/mvvm.png)
+![Architecture](https://github.com/onurbarman/MovieDB/blob/master/images/mvvm.png)
 
 
 ## Libraries and tools 🛠
