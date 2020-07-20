@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DB3069</color>
+    <color name="colorPrimaryDark">#d6182a</color>
+    <color name="colorAccent">#F99F00</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="color_title_fragments">#030303</color>
+    <color name="movie_item_color">#222222</color>
+    <color name="title_movie_subcolor">#666666</color>
+    <color name="red_imdb_color">#d6182a</color>
+    <color name="title_person_role">#999999</color>
+
+    <color name="profile_text_color">#e24951</color>
+</resources>

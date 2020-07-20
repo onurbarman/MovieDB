@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:id="@+id/linearTitle"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+    android:background="@drawable/border_with_line">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_movies"
+                android:textSize="20sp"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:textColor="@color/color_title_fragments"
+                android:layout_marginTop="16dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linearNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/linearTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_now_playing"
+                android:fontFamily="@font/avenirmedium"
+                android:textSize="18sp"
+                android:textColor="@color/title_movie_subcolor"
+                android:layout_marginBottom="16dp"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewNowPlaying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/linearNowPlaying"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_popular"
+                android:fontFamily="@font/avenirmedium"
+                android:textSize="18sp"
+                android:textColor="@color/title_movie_subcolor"
+                android:layout_marginBottom="16dp"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPopular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

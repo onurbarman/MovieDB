@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+
+                    android:id="@+id/imageMovieTVCard"
+                    android:layout_width="140dp"
+                    android:layout_height="210dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/imageMovieTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:id="@+id/titleMovieTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="2"
+                android:lines="2"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/movie_item_color"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:textSize="16sp"
+
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

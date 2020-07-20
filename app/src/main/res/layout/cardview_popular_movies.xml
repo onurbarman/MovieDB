@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="140dp"
+        android:layout_height="225dp"
+        app:cardElevation="0dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/imageMovieCard"
+                android:layout_width="140dp"
+                android:layout_height="210dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="4dp">
+        <ImageView
+                android:id="@+id/imagePopularMovie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/textPopularMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfprodisplaybold"
+                android:textSize="12sp"
+                android:maxLines="2"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="true"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        <TextView
+                android:id="@+id/textPopularMovieDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/textPopularMovieName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textAllCaps="true"/>
+
+        <LinearLayout
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:orientation="horizontal"
+                android:background="@drawable/ic_oval"
+                app:layout_constraintEnd_toEndOf="@id/linearLayout"
+                app:layout_constraintTop_toTopOf="@id/linearLayout"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center">
+
+            <TextView
+                    android:id="@+id/textPopularMovieVoteFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:textSize="20sp"
+                    />
+
+            <TextView
+                    android:id="@+id/textPopularMovieVoteSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sfprodisplayregular"
+                    android:textSize="12sp"
+            />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

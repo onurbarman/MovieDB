@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="6dp">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/imagePersonCard"
+                android:layout_width="70dp"
+                android:layout_height="102dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="6dp">
+
+        <ImageView
+                android:id="@+id/imagePerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:id="@+id/titlePersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="2"
+                android:lines="2"
+                android:textColor="@color/movie_item_color"
+                android:fontFamily="@font/sfprodisplaymedium"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
