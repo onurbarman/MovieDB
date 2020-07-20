@@ -9,6 +9,11 @@
 
     <string name="error_fetch_movies">Please check your internet connection</string>
 
+    <string name="alert_close">Uygulama Kapatılacak!</string>
+    <string name="alert_question">Uygulamadan çıkmak istiyor musunuz?</string>
+    <string name="alert_quit_text">Çıkış</string>
+    <string name="alert_cancel_text">İptal</string>
+
     <string name="title_movies">Movies</string>
     <string name="title_tv">TV</string>
     <string name="title_now_playing">Now Playing</string>
@@ -18,6 +23,4 @@
     <string name="title_populartvshows">Popular TV Shows</string>
     <string name="title_fullcastandcrew">Full Cast &amp; Crew</string>
     <string name="profile_text">Movie DB</string>
-    <string name="movie_detail_description">Fueled by his restored faith in humanity and inspired by Superman\'s selfless act, Bruce Wayne enlists the help of his newfound ally.</string>
-
 </resources>

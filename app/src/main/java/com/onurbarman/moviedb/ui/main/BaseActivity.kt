@@ -45,11 +45,11 @@ open class BaseActivity : AppCompatActivity(),
     private fun initAlertDialog() {
         alertDialog = SweetAlertDialog(this)
         alertDialog.changeAlertType(SweetAlertDialog.WARNING_TYPE)
-        alertDialog.setTitleText("Uygulama Kapatılacak!")
-        alertDialog.setContentText("Uygulamadan çıkmak istiyor musunuz?")
+        alertDialog.setTitleText(getString(R.string.alert_close))
+        alertDialog.setContentText(getString(R.string.alert_question))
         alertDialog.showCancelButton(true)
-        alertDialog.setConfirmText("Çıkış")
-        alertDialog.setCancelText("İptal")
+        alertDialog.setConfirmText(getString(R.string.alert_quit_text))
+        alertDialog.setCancelText(getString(R.string.alert_cancel_text))
         alertDialog.setConfirmClickListener (object: SweetAlertDialog.OnSweetClickListener {
             override fun onClick(sDialog:SweetAlertDialog) {
                 alertDialog.dismissWithAnimation()

@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply from: 'obfuscationUtils.gradle'
+
 android {
     compileOptions {
         sourceCompatibility = 1.8
@@ -22,6 +24,10 @@ android {
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
+
+        buildConfigField 'String', 'SERVICE_BASE_URL', obfuscateJavaToByteString("https://api.themoviedb.org/3/")
+
+        buildConfigField 'String', 'SERVICE_API_KEY', obfuscateJavaToByteString("c75c011973e866fa1cab3de41c1bad16")
     }
     buildTypes {
         release {
